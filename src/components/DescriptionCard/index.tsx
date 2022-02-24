@@ -11,7 +11,6 @@ import { useUser } from "../../hooks/useUser";
 
 export function DescriptionCard() {
   const { data } = useUser();
-
   return (
     <Container>
       <CardOne>
