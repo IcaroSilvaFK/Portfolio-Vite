@@ -17,6 +17,7 @@ export function useUser() {
       return response.data;
     },
     {
+      refetchOnWindowFocus: false,
       staleTime: 60 * 60 * 24, //one day
     }
   );
