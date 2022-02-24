@@ -7,7 +7,7 @@ export const Container = styled.div`
 
 export const ContainerBackground = styled.div`
   padding: 40px 60px;
-  background-color: var(--blue-50);
+  background-color: var(--blue-100);
   border-bottom-left-radius: 100px;
 `;
 
@@ -27,4 +27,15 @@ export const ContainerContent = styled.div`
       transform: translateX(0);
     }
   }
+`;
+
+export const ContainerBody = styled.div``;
+
+export const SectionCards = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 10px;
+  width: 800px;
+  margin: 24px auto;
 `;

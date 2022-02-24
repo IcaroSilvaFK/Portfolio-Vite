@@ -6,7 +6,15 @@ import { TitlePage } from "../../components/TitlePage";
 
 //@ts-ignore
 import Student from "../../assets/stud.svg";
-import { Container, ContainerBackground, ContainerContent } from "./styles";
+import {
+  Container,
+  ContainerBackground,
+  ContainerContent,
+  ContainerBody,
+  SectionCards,
+} from "./styles";
+import { CardComponent, CaseSwitch } from "../../components/Card";
+
 export function Home() {
   const { data, isFetching } = useUser();
 
@@ -23,6 +31,19 @@ export function Home() {
           </div>
         </ContainerContent>
       </ContainerBackground>
+      <ContainerBody>
+        <SectionCards>
+          <CardComponent description="HTML5" type={CaseSwitch.html} />
+          <CardComponent description="Typescript" type={CaseSwitch.ts} />
+          <CardComponent description="Next" type={CaseSwitch.next} />
+          <CardComponent description="React" type={CaseSwitch.react} />
+          <CardComponent description="Sass" type={CaseSwitch.sass} />
+          <CardComponent
+            description="Styled-components"
+            type={CaseSwitch.styled}
+          />
+        </SectionCards>
+      </ContainerBody>
       <HoverNavBar />
     </Container>
   );

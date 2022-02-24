@@ -20,13 +20,15 @@ export default createGlobalStyle`
   --gray-600:#4A5568;
   --gray-500:#718096;
   --gray-400:#A0AEC0;
+  --gray-200:#E2E8F0;
+  --gray-50:#F7FAFC;
 
   --blue-600:#2B6CB0;
   --blue-500:#3182CE;
   --blue-400:#4299E1;
   --blue-300:#63B3ED;
   --blue-100:#BEE3F8;
-  --blue-50:#EBF8FF;
+  --blue-50:#e6f7ff;
 }
   *{
     padding: 0;
