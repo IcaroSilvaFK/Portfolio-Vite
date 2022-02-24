@@ -6,7 +6,6 @@ export const Container = styled.div`
   animation: Initialize 0.4s linear;
   .containerImage {
     margin-left: 50px;
-    animation: Initialize 0.4s linear;
   }
 
   @keyframes Initialize {
