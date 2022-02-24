@@ -19,7 +19,9 @@ export function DescriptionCard() {
         </div>
         <div>
           <h3>Since</h3>
-          <strong>{DateFormat(data?.created_at!)}</strong>
+          <strong>
+            {data?.created_at ? DateFormat(data?.created_at!) : ""}
+          </strong>
         </div>
       </CardOne>
       <CardOne>
