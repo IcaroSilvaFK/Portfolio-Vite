@@ -29,7 +29,12 @@ export const ContainerContent = styled.div`
   }
 `;
 
-export const ContainerBody = styled.div``;
+export const ContainerBody = styled.div`
+  h2 {
+    padding: 12px;
+    text-align: center;
+  }
+`;
 
 export const SectionCards = styled.div`
   display: grid;

@@ -32,6 +32,7 @@ export function Home() {
         </ContainerContent>
       </ContainerBackground>
       <ContainerBody>
+        <h2>Principais competencias</h2>
         <SectionCards>
           <CardComponent description="HTML5" type={CaseSwitch.html} />
           <CardComponent description="Typescript" type={CaseSwitch.ts} />
