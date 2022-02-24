@@ -19,7 +19,7 @@ export function TitlePage() {
           </span>
           caro,
           <br />
-          fron-end developer
+          front-end developer
         </h1>
         <button>Contact me</button>
       </ContainerPresentation>

@@ -3,8 +3,19 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
+  animation: Initialize 0.4s linear;
   .containerImage {
     margin-left: 50px;
+    animation: Initialize 0.4s linear;
+  }
+
+  @keyframes Initialize {
+    0% {
+      transform: translateX(-50px);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
 `;
 
