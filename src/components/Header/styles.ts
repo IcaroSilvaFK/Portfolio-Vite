@@ -17,7 +17,7 @@ export const Container = styled.header`
       font-size: 18px;
       background: linear-gradient(
         100deg,
-        var(--puprle-700),
+        var(--purple-700),
         var(--purple-400),
         var(--blue-600)
       );

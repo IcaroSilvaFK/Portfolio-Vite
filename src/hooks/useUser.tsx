@@ -7,6 +7,7 @@ interface UserGit {
   public_repos: number;
   followers: number;
   created_at: string;
+  blog: string;
 }
 
 export function useUser() {
@@ -18,7 +19,6 @@ export function useUser() {
     },
     {
       refetchOnWindowFocus: false,
-      staleTime: 60 * 60 * 24, //one day
     }
   );
   return { data, isFetching };

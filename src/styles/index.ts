@@ -5,7 +5,7 @@ export default createGlobalStyle`
 :root{
   --white:#fff;
   --black: #000;
-  --puprle-700:#553C9A;
+  --purple-700:#553C9A;
   --purple-600:#6B46C1;
   --purple-500:#805AD5;
   --purple-400:#9F7AEA;
@@ -49,6 +49,16 @@ export default createGlobalStyle`
   a{
     text-decoration: none;
     color: inherit;
+  }
+  body{
+    &::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+  }
+   
+  &::-webkit-scrollbar-thumb{
+    background-color: var(--gray-400)
+  }
   }
  
 `;

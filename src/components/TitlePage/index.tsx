@@ -21,7 +21,9 @@ export function TitlePage() {
           <br />
           front-end developer
         </h1>
-        <button>Contact me</button>
+        <a href="mailto:iv2484706@gmail.com">
+          <button>Contact me</button>
+        </a>
       </ContainerPresentation>
     </Container>
   );

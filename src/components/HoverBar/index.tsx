@@ -11,7 +11,7 @@ export function HoverNavBar() {
       setScroll(true);
     } else setScroll(false);
   });
-  console.log("renderizou");
+
   return (
     <>
       {scroll ? (

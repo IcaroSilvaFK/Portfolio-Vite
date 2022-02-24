@@ -23,4 +23,9 @@ export const IconUp = styled(BsArrowUpCircleFill)`
   width: 35px;
   height: 35px;
   color: var(--purple-500);
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 `;

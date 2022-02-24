@@ -3,7 +3,7 @@ import { Header } from "../../components/Header";
 import { useUser } from "../../hooks/useUser";
 import { HoverNavBar } from "../../components/HoverBar";
 import { TitlePage } from "../../components/TitlePage";
-
+import { DescriptionCard } from "../../components/DescriptionCard";
 //@ts-ignore
 import Student from "../../assets/stud.svg";
 import {
@@ -12,8 +12,12 @@ import {
   ContainerContent,
   ContainerBody,
   SectionCards,
+  SectionAboutMe,
+  SectionDescription,
 } from "./styles";
 import { CardComponent, CaseSwitch } from "../../components/Card";
+import { AboutMe } from "../../components/AboutMeCard";
+import { Footer } from "../../components/Footer";
 
 export function Home() {
   const { data, isFetching } = useUser();
@@ -32,7 +36,7 @@ export function Home() {
         </ContainerContent>
       </ContainerBackground>
       <ContainerBody>
-        <h2>Principais competencias</h2>
+        <h2>Principais competências.</h2>
         <SectionCards>
           <CardComponent description="HTML5" type={CaseSwitch.html} />
           <CardComponent description="Typescript" type={CaseSwitch.ts} />
@@ -44,8 +48,18 @@ export function Home() {
             type={CaseSwitch.styled}
           />
         </SectionCards>
+        <SectionAboutMe>
+          <div className="blueEffect"></div>
+          <div className="content">
+            <AboutMe />
+          </div>
+        </SectionAboutMe>
+        <SectionDescription>
+          <DescriptionCard />
+        </SectionDescription>
       </ContainerBody>
       <HoverNavBar />
+      <Footer />
     </Container>
   );
 }
